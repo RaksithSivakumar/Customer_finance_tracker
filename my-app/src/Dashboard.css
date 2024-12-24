@@ -1,0 +1,57 @@
+/* src/Dashboard.css */
+.dashboard-container {
+    padding: 20px;
+    background-color: #f0f4f8; /* Light background color */
+    min-height: 100vh;
+}
+  
+.dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+  
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+  
+.stat-box {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    text-align: center;
+}
+  
+.stat-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #6200ea; /* Primary color */
+}
+  
+.stat-box p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Darker text color */
+}
+  
+/* Positioning adjustments for the inverted triangle layout */
+.left-box {
+    margin-top: 20px;
+}
+  
+.center-box {
+    position: absolute;
+    top: 100px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.right-box {
+    margin-top: 20px;
+}
