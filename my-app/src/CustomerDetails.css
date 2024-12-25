@@ -1,30 +1,79 @@
-.customer-details-container {
-    padding: 20px;
-    text-align: center;
-  }
+/* TotalCustomers.css */
+
+.customers-list-container {
+  padding: 50px;
+  margin: center;
   
-  .customer-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #6200ea;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input:focus {
+  border-color: #3700b3;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers-table th, .customers-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.customers-table img.customer-photo {
+  width: 50px; /* Smaller size */
+  height: 50px; /* Smaller size */
+  object-fit: cover; /* Ensure image covers the circle without distortion */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.customers-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.download-button {
+  margin: 20px auto; /* Center the button horizontally */
+  display: block;    /* Allow centering when combined with margin */
+  padding: 10px 20px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Slightly larger text for better visibility */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.download-button:hover {
+  background-color: #3700b3; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+  .customers-table th, .customers-table td {
+    font-size: 12px; /* Smaller font for smaller screens */
+    padding: 8px;
   }
-  
-  .customer-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+
+  .search-bar input {
+    padding: 8px;
+    font-size: 14px;
   }
-  
-  .customer-info {
-    text-align: left;
+
+  .download-button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
-  
-  .customer-info h3 {
-    font-size: 24px;
-  }
-  
-  .customer-info p {
-    font-size: 18px;
-  }
-  
+}
