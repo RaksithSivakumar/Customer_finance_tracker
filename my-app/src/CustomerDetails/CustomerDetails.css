@@ -1,10 +1,9 @@
-/* TotalCustomers.css */
-
+/* src/CustomerDetails.css */
 .customers-list-container {
   padding: 50px;
-  margin: center;
-  
+  margin: 0;  /* Fix the typo here */
 }
+
 
 .search-bar input {
   width: 100%;
