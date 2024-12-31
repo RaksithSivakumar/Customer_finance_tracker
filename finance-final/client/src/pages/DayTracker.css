@@ -1,0 +1,93 @@
+.tracker-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.tracker-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Success message styling */
+.success-message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}
+
+/* Customer list styling */
+.customer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.customer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.customer-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.customer-button,
+.remove-button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customer-button {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.customer-button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.remove-button:hover {
+  background-color: #b02a37;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .customer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .customer-button,
+  .remove-button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
